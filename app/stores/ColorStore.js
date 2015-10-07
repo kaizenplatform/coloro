@@ -1,11 +1,11 @@
 'use strict';
 
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var AppConstants = require('../constants/AppConstants');
+var ColorAppDispatcher = require('../dispatcher/ColorAppDispatcher');
+var ColorAppConstants = require('../constants/ColorAppConstants');
 var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
 
-var ActionTypes = AppConstants.ActionTypes;
+var ActionTypes = ColorAppConstants.ActionTypes;
 var CHANGE_EVENT = 'change';
 
 var _color = {
@@ -33,7 +33,7 @@ var ColorStore = assign({}, EventEmitter.prototype, {
 
 });
 
-ColorStore.dispatchToken = AppDispatcher.register(function (action) {
+ColorStore.dispatchToken = ColorAppDispatcher.register(function (action) {
   switch (action.type) {
     case ActionTypes.GET_COLOR_FROM_CLIPBOARD:
       _color = action.color;

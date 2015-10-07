@@ -1,12 +1,12 @@
 'use strict';
 
 var React = require('react');
-var App = require('./components/App');
-var AppUtils = require('./utils/AppUtils');
+var ColorApp = require('./components/ColorApp');
+var ColorAppUtils = require('./utils/ColorAppUtils');
 
-AppUtils.watchClipboard();
+ColorAppUtils.watchClipboard();
 
 React.render(
-  React.createElement(App),
-  document.body
+  React.createElement(ColorApp),
+  document.getElementById('react-root')
 );

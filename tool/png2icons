@@ -1,0 +1,15 @@
+#!/bin/bash
+
+array=(16 32 128 256 512)
+src="app/icon_512x512@2x"
+dest="app/app.iconset"
+
+mkdir "app/app.iconset"
+for i in "${array[@]}"
+do
+    sips -Z $i ${src}.png --out "${dest}/icon_${i}x${i}.png"
+    sips -Z $((i*2)) ${src}.png --out "${dest}/icon_${i}x${i}@2x.png"
+done
+
+iconutil -c icns "${dest}"
+rm -rf "${dest}"
