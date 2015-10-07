@@ -1,9 +1,9 @@
 'use strict';
 
 var ColorActionCreators = require('../actions/ColorActionCreators');
-var kaizenColors = require('../kaizen-ui-colors.json');
+var kaizenColors = require('kaizen-ui-colors');
 
-console.log(ColorActionCreators);
+console.log(kaizenColors);
 module.exports = {
   watchClipboard: function(delay = 1000) {
     window.setInterval(function() {
@@ -13,7 +13,7 @@ module.exports = {
 
   findKaizenColors: function(key) {
     var varName, hexCode;
-    
+
     if (key.match(/^#?[\w\d]{6}$/)) {
       hexCode = key;
       if (!key.match(/^#/)) {
