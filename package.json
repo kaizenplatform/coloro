@@ -1,0 +1,38 @@
+{
+  "name": "kaizen-ui-color-converter",
+  "version": "1.0.0",
+  "description": "A tiny utility tool to convert a hex color code of Kaizen UI Colors to its color name (and a color name to its hex code).",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaizenplatform/kaizen-ui-color-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaizenplatform/kaizen-ui-color-converter/issues"
+  },
+  "homepage": "https://github.com/kaizenplatform/kaizen-ui-color-converter",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack src/app.js dist/app.js"
+  },
+  "keywords": [],
+  "author": "Kaizen Platform, Inc.",
+  "email": "dev-team@kaizenplatform.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "json-loader": "^0.5.3",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.3"
+  },
+  "engines": {
+    "node": ">=4.x"
+  }
+}
