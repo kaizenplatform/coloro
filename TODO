@@ -2,3 +2,4 @@
 - [ ] Distribution
 - [ ] Auto update
 - [ ] Write test
+- [ ] Try to use browserify instead of webpack

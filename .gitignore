@@ -2,3 +2,7 @@ node_modules
 dist
 *.asar
 wireframe
+release
+.DS_Store
+logs
+*.log

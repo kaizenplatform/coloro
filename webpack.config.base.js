@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './app/app.js',
   output: {
     path: __dirname + '/dist/',
     filename: 'bundle.js'
@@ -12,5 +11,6 @@ module.exports = {
       { test: /\.json$/, loader: 'json-loader' }
     ]
   },
-  target: 'atom'
+  plugins: [],
+  externals: []
 };

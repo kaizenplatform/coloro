@@ -1,18 +1,18 @@
 'use strict';
 
 var clipboard = require('clipboard');
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var AppConstants = require('../constants/AppConstants');
+var ColorAppDispatcher = require('../dispatcher/ColorAppDispatcher');
+var ColorAppConstants = require('../constants/ColorAppConstants');
 
-var ActionTypes = AppConstants.ActionTypes;
+var ActionTypes = ColorAppConstants.ActionTypes;
 
 module.exports = {
-  getColorFromClipboard: function() {
+  getColorFromClipboard: () => {
     var copied = clipboard.readText();
-    var AppUtils = require('../utils/AppUtils');
-    var kaizenColor = AppUtils.findKaizenColors(copied);
+    var ColorAppUtils = require('../utils/ColorAppUtils');
+    var kaizenColor = ColorAppUtils.findKaizenColors(copied);
 
-    AppDispatcher.dispatch({
+    ColorAppDispatcher.dispatch({
       type: ActionTypes.GET_COLOR_FROM_CLIPBOARD,
       color: {name: kaizenColor.name, hex: kaizenColor.hex}
     });

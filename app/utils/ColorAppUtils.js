@@ -3,15 +3,14 @@
 var ColorActionCreators = require('../actions/ColorActionCreators');
 var kaizenColors = require('kaizen-ui-colors');
 
-console.log(kaizenColors);
 module.exports = {
-  watchClipboard: function(delay = 1000) {
-    window.setInterval(function() {
+  watchClipboard: (delay = 1000) => {
+    window.setInterval(() => {
       ColorActionCreators.getColorFromClipboard();
     }, delay);
   },
 
-  findKaizenColors: function(key) {
+  findKaizenColors: (key) => {
     var varName, hexCode;
 
     if (key.match(/^#?[\w\d]{6}$/)) {
