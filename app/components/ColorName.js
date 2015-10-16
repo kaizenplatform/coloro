@@ -12,7 +12,7 @@ var ColorName = React.createClass({
   },
 
   render: function () {
-    var value = this.props.name;
+    var value = '$' + this.props.name;
     return (
       <div className="color-name" onClick={this.handleClick}>
         {value}
