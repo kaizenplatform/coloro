@@ -1,6 +1,6 @@
 {
   "name": "Coloro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny desktop app to show a hex code and a color name of Kaizen UI Colors which you copy in a clipboard.",
   "main": "main.js",
   "repository": {
