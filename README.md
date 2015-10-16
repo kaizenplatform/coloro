@@ -8,7 +8,7 @@ Coloro is made with Electron and React.
 
 ## Download
 
-You can download **coloro** from the [releases](https://github.com/kaizenplatform/coloro/releases) page. Currently only supports OS X.
+You can download the packaged app from [the releases page](https://github.com/kaizenplatform/coloro/releases). Currently only supports OS X.
 
 ## Installation
 
