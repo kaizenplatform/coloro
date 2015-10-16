@@ -12,6 +12,7 @@ module.exports = {
 
   findKaizenColors: (key) => {
     var varName, hexCode;
+    key = key.toLowerCase()
 
     if (key.match(/^#?[\w\d]{6}$/)) {
       hexCode = key;

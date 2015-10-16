@@ -35,6 +35,7 @@ app.on('ready', function() {
 
   if (process.env.NODE_ENV === 'development') {
     mainWindow.openDevTools();
+    mainWindow.setResizable(true);
   }
-  
+
 });
