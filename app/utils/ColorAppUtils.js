@@ -14,7 +14,7 @@ module.exports = {
     var varName, hexCode;
     key = key.toLowerCase()
 
-    if (key.match(/^#?[\w\d]{6}$/)) {
+    if (key.match(/^#?[0-9A-F]{6}$/i)) {
       hexCode = key;
       if (!key.match(/^#/)) {
         hexCode = '#' + key;
