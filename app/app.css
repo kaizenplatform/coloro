@@ -25,7 +25,12 @@ body {
   left: 60px;
   font-weight: bold;
   -webkit-app-region: no-drag;
-  cursor: text;
+  cursor: pointer;
+}
+
+.color-name:hover {
+  top: 9px;
+  font-size: 14.5px;
 }
 
 .color-hex-code {
@@ -35,7 +40,12 @@ body {
   font-size: 13px;
   line-height: 1;
   -webkit-app-region: no-drag;
-  cursor: text;
+  cursor: pointer;
+}
+
+.color-hex-code:hover {
+  bottom: 9px;
+  font-size: 13.5px;
 }
 
 .color-box {
@@ -46,7 +56,6 @@ body {
   height: 40px;
   border: 1px solid #555459;
   border-radius: 3px;
-  -webkit-app-region: no-drag;
 }
 
 .placeholder {
@@ -57,4 +66,16 @@ body {
   transform: translate(-50%, -50%);
   color: #b4bed5;
   cursor: move;
+}
+
+input[type="text"] {
+  padding: 0;
+  border: none;
+  display: inline-block;
+  width: auto;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: none;
 }
